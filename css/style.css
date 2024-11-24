@@ -112,3 +112,33 @@ footer::before {
     transform: rotate(180deg); 
     color: black;
 }
+#counter-container{
+    margin-top: 18px;
+}
+.experience-year{
+    font-size: 30px;
+    color: goldenrod;
+}
+.experience-heading{
+    font-size: 14px;
+    color: black;
+}
+.single-experience-item{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.single-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 233, 233);
+    /* border: 1px solid #d3d2d2; */
+    /* padding: 10px 20px; */
+    width: 300px;
+    height: 90px;
+    border-radius: 5px;
+}
