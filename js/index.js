@@ -20,5 +20,38 @@ const faqData = [
     { question: 'Why is it important?', answer: 'A/B testing helps improve user experience and optimize conversions by relying on data-driven decisions.' },
 ];
 
+faqData.forEach(({ question, answer }) => {
+    const faqItem = document.createElement('div');
+    faqItem.classList.add('faq-item');
+    faqItem.style.cssText = `
+    background-color:  #f0f8ff;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+`;
+    // console.log(faqItem)
+
+    const faqQuestion = document.createElement('button');
+    // console.log(faqQuestion)
+    faqQuestion.classList.add('faq-question');
+    faqQuestion.innerHTML = `
+        <span style="color: #007bff;">${question}</span>
+       <i class="fa-solid fa-chevron-down"></i>
+    `;
+    const faqAnswer = document.createElement('div');
+            faqAnswer.classList.add('faq-answer');
+            faqAnswer.textContent = answer;
+
+            faqQuestion.addEventListener('click', () => {
+                const isActive = faqAnswer.style.display === 'block';
+                faqAnswer.style.display = isActive ? 'none' : 'block';
+                faqQuestion.classList.toggle('active', !isActive);
+            });
+
+    faqItem.appendChild(faqQuestion);
+    faqItem.appendChild(faqAnswer);
+
+    faqSections.appendChild(faqItem);
+})
  
  faqContainer.appendChild(faqSections);
