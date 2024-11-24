@@ -1,3 +1,7 @@
+const currentYear = new Date().getFullYear();
+document.getElementById('current-year').textContent = currentYear;
+
+
 const faqContainer = document.getElementById('faq-container');
 // console.log(faqContainer)
 const faqSections = document.createElement('div');
