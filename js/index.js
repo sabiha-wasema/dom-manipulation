@@ -41,6 +41,7 @@ faqData.forEach(({ question, answer }) => {
     const faqAnswer = document.createElement('div');
             faqAnswer.classList.add('faq-answer');
             faqAnswer.textContent = answer;
+            faqAnswer.style.display = 'none';
 
             faqQuestion.addEventListener('click', () => {
                 const isActive = faqAnswer.style.display === 'block';
