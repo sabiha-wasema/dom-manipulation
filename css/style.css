@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 header {
-    background: linear-gradient(90deg, #4CAF50, #2E7D32);
+    background: #333;
     color: white;
     text-align: center;
     padding: 1.5rem 0;
@@ -62,7 +62,7 @@ footer::before {
     display: block;
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #4CAF50, #2E7D32);
+    background: linear-gradient(90deg, blue, red);
     margin: 0.5rem auto;
     border-radius: 2px;
 }
